@@ -1,5 +1,6 @@
 package com.udacity.gamedev.firstdemo.client;
 
+import com.udacity.gamedev.firstdemo.FirstDemoGame;
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;

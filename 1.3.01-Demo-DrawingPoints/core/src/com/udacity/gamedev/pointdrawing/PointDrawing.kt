@@ -63,7 +63,7 @@ class PointDrawing : ApplicationListener {
      */
     override fun dispose() {
         Gdx.app.log(TAG, "Application Listener Disposed of")
-        shapeRenderer!!.dispose()
+        shapeRenderer.dispose()
     }
 
     /**
