@@ -7,8 +7,6 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer
 import com.badlogic.gdx.math.Vector2
 import com.badlogic.gdx.utils.Array
 
-import java.util.Random
-
 /**
  * TODO: Start here!
 
@@ -34,59 +32,42 @@ import java.util.Random
 
 
 class Starfield : ApplicationAdapter() {
+    private val STAR_DENSITY = 0.01f
     lateinit var shapeRenderer: ShapeRenderer
     lateinit var stars: Array<Vector2>
 
     override fun create() {
-        shapeRenderer = ShapeRenderer()
-        initStars(0.9f)
+        // TODO: Initialize a shapeRenderer
+
+        // TODO: Call initStars
 
     }
 
     fun initStars(density: Float) {
         // TODO: Figure out how many stars to draw. You'll need the screen dimensions, which you can get using Gdx.graphics.getWidth() and Gdx.graphics.getHeight().
-        val width = Gdx.graphics.getWidth()
-        val height = Gdx.graphics.getHeight()
+
         // TODO: Create a new array of Vector2's to hold the star positions
-        val size = (10000 * density).toInt()
-        stars = Array<Vector2>(size)
+
         // TODO: Use java.util.Random to fill the array of star positions
-        val r = Random()
-        for (i in 0..size - 1) {
-            val x = r.nextFloat() * width
-            val y = r.nextFloat() * height
-            val point = Vector2(x, y)
-            stars.add(point)
-        }
 
     }
 
     override fun render() {
         // TODO: Make the night sky black
-        Gdx.gl.glClearColor(0f, 0f, 0f, 1f)
+        Gdx.gl.glClearColor(1f, 0f, 0f, 1f)
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
 
         // TODO: Begin a shapeRenderer batch using ShapeType.Point
-        with(shapeRenderer) {
-            setAutoShapeType(true)
-            begin()
-            // TODO: Loop through the star positions and use shapeRenderer to draw points
-            for (p in stars) {
-                point(p.x, p.y, 0f)
-            }
-            // TODO: End the shapeRenderer batch
-            end()
-        }
+
+        // TODO: Loop through the star positions and use shapeRenderer to draw points
+
+        // TODO: End the shapeRenderer batch
+
     }
 
     override fun dispose() {
         // TODO: Dispose of our ShapeRenderer
 
         super.dispose()
-    }
-
-    companion object {
-
-        private val STAR_DENSITY = 0.01f
     }
 }
