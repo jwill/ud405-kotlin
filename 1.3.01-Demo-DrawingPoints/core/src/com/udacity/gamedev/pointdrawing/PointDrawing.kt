@@ -103,6 +103,6 @@ class PointDrawing : ApplicationListener {
     companion object {
 
         // Always tag your log messages!
-        val TAG = PointDrawing::class.java.name
+        val TAG = PointDrawing::class.java.toString()
     }
 }
