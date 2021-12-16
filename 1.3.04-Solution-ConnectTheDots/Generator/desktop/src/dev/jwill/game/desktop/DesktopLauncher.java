@@ -1,8 +1,8 @@
-package com.udacity.gamedev.connecthedotsgenerator.desktop;
+package dev.jwill.game.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.udacity.gamedev.connecthedotsgenerator.ConnectTheDotsGenerator;
+import dev.jwill.game.ConnectTheDotsGenerator;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {
