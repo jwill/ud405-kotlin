@@ -1,4 +1,4 @@
-package com.udacity.gamedev.icicles
+package dev.jwill.game
 
 import com.badlogic.gdx.Game
 

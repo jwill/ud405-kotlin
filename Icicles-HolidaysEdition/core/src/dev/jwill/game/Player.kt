@@ -1,4 +1,4 @@
-package com.udacity.gamedev.icicles
+package dev.jwill.game
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input
