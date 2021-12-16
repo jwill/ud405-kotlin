@@ -1,4 +1,4 @@
-package com.udacity.gamedev.connecthedots
+package dev.jwill.game
 
 import com.badlogic.gdx.ApplicationAdapter
 import com.badlogic.gdx.Gdx
