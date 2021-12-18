@@ -45,6 +45,7 @@ project(":desktop") {
     apply plugin: "java-library"
 
 
+
     dependencies {
         implementation project(":core")
         api "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
@@ -55,7 +56,7 @@ project(":desktop") {
 
 project(":core") {
     apply plugin: "java-library"
-
+    apply plugin: "kotlin"
 
     dependencies {
         api "com.badlogicgames.gdx:gdx:$gdxVersion"
@@ -67,7 +68,6 @@ repositories {
 }
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    implementation "org.jetbrains.kotlin:kotlin-script-runtime:1.5.10-release-949"
 }
 compileKotlin {
     kotlinOptions {

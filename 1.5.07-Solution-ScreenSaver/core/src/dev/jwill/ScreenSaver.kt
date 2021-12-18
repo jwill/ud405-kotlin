@@ -1,4 +1,4 @@
-package com.udacity.gamedev.screensaver
+package dev.jwill
 
 import com.badlogic.gdx.Game
 

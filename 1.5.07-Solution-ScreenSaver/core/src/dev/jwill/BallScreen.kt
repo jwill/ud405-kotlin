@@ -1,4 +1,4 @@
-package com.udacity.gamedev.screensaver
+package dev.jwill
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.Input.Keys
@@ -106,7 +106,7 @@ class BallScreen : ScreenAdapter(), InputProcessor {
         return false
     }
 
-    override fun scrolled(amount: Int): Boolean {
+    override fun scrolled(amountX: Float, amountY: Float): Boolean {
         return false
     }
 

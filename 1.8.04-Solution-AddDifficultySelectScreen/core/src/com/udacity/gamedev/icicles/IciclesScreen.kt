@@ -15,7 +15,7 @@ import com.badlogic.gdx.utils.viewport.ScreenViewport
 // TODO: Accept a IciclesGame in the constructor
 class IciclesScreen(game: IciclesGame, difficulty: Constants.Difficulty = Constants.Difficulty.EASY): Screen, InputAdapter() {
     companion object {
-        val TAG = IciclesScreen::class.java.toString()
+        val TAG = IciclesScreen::class.toString()
     }
 
     val game:IciclesGame

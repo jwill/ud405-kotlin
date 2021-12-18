@@ -1,4 +1,4 @@
-package com.udacity.gamedev.inputtestbed
+package dev.jwill.inputtestbed
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.ScreenAdapter
